@@ -1,0 +1,154 @@
+print("Welcome to my Quiz Game!")
+
+name = input("Enter your name here ")
+
+print("Welcome " + name)
+
+play = input("Do you want to play the game? ")
+
+if play.lower() == "yes":
+    print("Let's start!")
+
+    # Entering the score variable
+
+    score = 0
+    
+    # Question 1
+
+    question = input("What is the capital of France ")
+
+    answer = "paris"
+
+    if answer.lower() == "paris":
+        print("Correct answer")
+        score += 1
+    else:
+        print("Wrong answer")
+        print("The correct answer is paris")
+        
+# Question 2
+
+question = input("What does CPU stands for? ")
+answer = "central processing unit"
+if answer.lower() == "central processing unit":
+            print("Correct answer")
+            score += 1
+else:
+            print("Incorrect answer!")
+            print("The correct answer is central processing unit")
+        
+# Question 3
+question = input("Who was the first person to reach Moon? ")
+
+answer = "neil armstrong"
+
+if answer.lower() == "neil armstrong":
+                print("Correct answer")
+                score += 1
+else:
+                print("Incorrect Answer!")
+                print("The correct answer is neil armstrong")
+            
+
+# Question 4
+question = input("Who is the current CEO of Space X? ")
+answer = "elon musk"
+
+if answer.lower() == "elon musk":
+                    print("Correct answer!")
+                    score += 1
+else:
+                    print("Incorrect answer!")
+                    print("The correct answer is elon musk")
+
+                
+
+# Question 5
+question = input("What is the name of the famous landmark in the UK? ")
+
+answer = "buckingham palace"
+
+if answer.lower() == "buckingham palace":
+                        print("Correct answer!")
+                        score += 1
+else:
+                        print("Incorrect answer!")
+                        print("The correct answer is buckingham palace")
+
+                    
+# Question 6
+
+question = input("Who is the current Prime Minister of Canada? ")
+
+answer = "justin trudeau"
+
+if answer.lower() == "justin trudeau":
+                            print("Correct answer!")
+                            score += 1
+else:
+                            print("Incorrect answer!")
+                            print("The correct answer is justin trudeau")
+
+                        
+
+# Question 7
+question = input("What is the name of the longest river in the world? ")
+
+answer = "nile"
+
+if answer.lower() == "nile":
+                                print("Correct answer!")
+                                score += 1
+else:
+                                print("Incorrect answer!")
+                                print("The correct answer is nile")
+
+                            
+
+# Question 8
+question = input("Who is the current President of the United States? ")
+answer = "joe biden"
+
+if answer.lower() == "joe biden":
+                                    print("Correct answer!")
+                                    score += 1
+else:
+                                    print("Incorrect answer!")
+                                    print("The correct answer is joe biden")
+
+                                
+
+# Question 9
+
+question = input("When was the last constitution made in Pakistan? ")
+answer = 1973
+
+if answer == 1973:
+                                        print("Correct answer!")
+                                        score += 1
+else:
+                                        print("Incorrect answer!")
+                                        print("The correct answer is 1973")
+
+                                    
+
+# Question 10
+question = input("What is the name of the famous city in China? ")
+answer = "beijing"
+
+if answer.lower() == "beijing":
+                                            print("Correct answer!")
+                                            score += 1
+else:
+                                             print("Incorrect answer!")
+                                             print("The correct answer is beijing")
+                                        
+# Displaying the final score
+
+print("Your final score is " + str(score) + "/10")
+print("Thanks for playing the game!")
+
+                            
+
+
+                    
