@@ -1,0 +1,30 @@
+name  = input("What is your name? ")
+print("Welcome " + name + " to this adventure game")
+
+question = input("You are on a dirt road game, Which way do you want to choose?(left/right) ").lower()
+
+if question == "left":
+    answer = input("You are goint to swim in a lake. Do you want to swim? (yes/no) ").lower()
+    if answer == "yes":
+        print("You encounter an alligator. He ate you")
+    elif answer == "no":
+        print("You are on a road. you walked many miles and are out of water. You died.")
+    else:
+        print("Invalid input. Please choose yes or no.")    
+
+elif question == "right":
+    answer = input("You are going on a wobbly bridge. Do you want to cross or move back? (cross / back)").lower()
+    if answer == "back":
+        print('You cannot go backward. If you go back, you die and lose the game.')
+    elif answer == "cross":
+        answer = input("You found an old man. Do you want to meet him or not? (yes or no)").lower()  
+        if answer == "yes":
+            print("The old man gives you a map. You can now find the treasure.")
+            print("Congratulations! You won the game.")
+        elif answer == "no":
+            print("You are on the wobbly bridge. You walked many miles and are out of water. You died.")
+        else:
+            print("Invalid input. Please choose yes or no.")
+
+else:
+    print("Invalid input, please choose left or right.")        
