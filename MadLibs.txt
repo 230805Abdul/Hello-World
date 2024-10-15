@@ -1,0 +1,20 @@
+def mad_libs():
+    print("Welcome to Mad Libs!")
+    
+    # Gather user input
+    adjective = input("Enter an adjective: ")
+    noun1 = input("Enter a noun: ")
+    noun2 = input("Enter another noun: ")
+    verb = input("Enter a verb: ")
+    adverb = input("Enter an adverb: ")
+    
+    # Create the story
+    story = f"Once upon a time, there was a {adjective} {noun1} who loved to {verb} {adverb}. \
+One day, it met a {noun2} and they became best friends forever!"
+    
+    # Print the story
+    print("\nHere's your story:")
+    print(story)
+
+# Run the game
+mad_libs()
