@@ -1,0 +1,31 @@
+def rail_fence_encrypt(text, key):
+    # Remove spaces from the text
+    text = text.replace(" ", "")
+    
+    # Create a list of rails (empty strings for each rail)
+    rails = ['' for _ in range(key)]
+    
+    # Initialize variables to track the current rail and the direction
+    rail = 0
+    direction = 1  # 1 means moving down, -1 means moving up
+    
+    # Place each character on the correct rail
+    for char in text:
+        rails[rail] += char
+        
+        # Move to the next rail
+        rail += direction
+        
+        # If we reach the top or bottom rail, reverse the direction
+        if rail == 0 or rail == key - 1:
+            direction *= -1
+    
+    # Concatenate all rails to form the ciphertext
+    ciphertext = ''.join(rails)
+    return ciphertext
+
+# Test the function
+plaintext = "Schindlers List"
+key = 4
+ciphertext = rail_fence_encrypt(plaintext, key)
+print("Ciphertext:", ciphertext)
